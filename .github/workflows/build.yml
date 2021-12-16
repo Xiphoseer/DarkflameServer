@@ -18,7 +18,7 @@ jobs:
     - name: configure
       run: mkdir build && cd build
     - name: cmake
-      run: cmake ..
+      run: ls .. && cmake ..
     - name: make
       run: make -j2
 
