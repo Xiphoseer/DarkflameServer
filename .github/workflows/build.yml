@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
-    - name: dependencies
-      run: sudo apt-get update && sudo apt-get install -y libssl-dev zlib1g-dev
     - name: cmake
       uses: lukka/run-cmake@v10
       with:
@@ -33,6 +31,3 @@ jobs:
           !build/_deps
           !build/cmake_install.cmake
           !build/*.a
-
-# See https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
-# for the number of runners
