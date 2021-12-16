@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: true
     - name: dependencies
       run: sudo apt-get update && sudo apt-get install -y libssl-dev zlib1g-dev libtinyxml2-dev 
     - name: build-dir
