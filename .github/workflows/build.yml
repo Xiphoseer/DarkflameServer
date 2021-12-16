@@ -16,7 +16,7 @@ jobs:
       with:
         submodules: true
     - name: dependencies
-      run: sudo apt-get update && sudo apt-get install -y libssl-dev zlib1g-dev libtinyxml2-dev 
+      run: sudo apt-get update && sudo apt-get install -y libssl-dev zlib1g-dev
     - name: cmake
       uses: lukka/run-cmake@v10
       with:
